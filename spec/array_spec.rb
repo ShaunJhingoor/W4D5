@@ -17,6 +17,9 @@ describe "Array" do
             array1 = Array.new([-1, 0, 2, -2, 1])
             expect(array1.two_sum).to eq([0, 4], [2, 3])
         end
+        it "if array is empty, returns nil" do 
+            expect([].two_sum).to eq(nil)
+        end
     end
 
 end
